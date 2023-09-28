@@ -12,7 +12,12 @@ class SettingsViewController: UIViewController {
   
   let logger = Logger(subsystem: "com.alfinindrawan.WeatherSky", category: "SettingsViewController")
   
-  private let primaryView = SettingsView()
+  private let primaryView: SettingsView = {
+    let view = SettingsView()
+    let viewModel = SettingsViewViewModel(options: SettingOption.allCases)
+    view.configure(with: viewModel)
+    return view
+  }()
   
   override func viewDidLoad() {
     super.viewDidLoad()

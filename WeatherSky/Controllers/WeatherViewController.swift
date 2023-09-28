@@ -23,6 +23,10 @@ class WeatherViewController: UIViewController {
   private func getLocation() {
     LocationManager.shared.getCurrentLocation { location in
       self.logger.info("\(location)")
+      
+      WeatherManager.shared.getWeather(for: location) {
+        
+      }
     }
   }
   
@@ -34,5 +38,4 @@ class WeatherViewController: UIViewController {
       primaryView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
       primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
   }
-  
 }
