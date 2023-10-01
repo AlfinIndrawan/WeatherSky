@@ -9,6 +9,13 @@ final class WeatherManager {
   
   let service = WeatherService.shared
   
+  // expose computed property
+  
+  
+  public private (set)var currentWeather: CurrentWeather?
+  public private (set)var hourlyWeather: [HourWeather]?
+  public private (set)var dailyWeather: [DayWeather]?
+  
   private init() {
     
   }
@@ -20,7 +27,10 @@ final class WeatherManager {
         print("\(result.currentWeather)")
         self.logger.info("\(String(describing: "Current: \(result.currentWeather)"))")
         self.logger.info("\(String(describing: "Hourly: \(result.hourlyForecast)"))")
-        self.logger.info("\(String(describing: "Hourly: \(result.dailyForecast)"))")
+        self.logger.info("\(String(describing: "daily: \(result.dailyForecast)"))")
+        self.hourlyWeather = result.hourlyForecast.forecast
+        self.currentWeather = result.currentWeather
+        self.dailyWeather = result.dailyForecast.forecast
         completion()
       } catch {
         logger.error("cant fetch weather service")
