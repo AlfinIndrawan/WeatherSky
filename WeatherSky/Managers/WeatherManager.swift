@@ -13,8 +13,8 @@ final class WeatherManager {
   
   
   public private (set)var currentWeather: CurrentWeather?
-  public private (set)var hourlyWeather: [HourWeather]?
-  public private (set)var dailyWeather: [DayWeather]?
+  public private (set)var hourlyWeather: [HourWeather] = []
+  public private (set)var dailyWeather: [DayWeather] = []
   
   private init() {
     

@@ -12,4 +12,8 @@ class CurrentWeatherCollectionViewCell: UICollectionViewCell {
   required init?(coder: NSCoder) {
     fatalError()
   }
+  
+  public func configure(with viewModel: CurrentWeatherCollectionViewCellModel) {
+    
+  }
 }
