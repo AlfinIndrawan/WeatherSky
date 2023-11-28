@@ -140,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				7CD169642AC9A909009D2C87 /* CurrentWeatherCollectionViewCell.swift */,
-				7CD169662AC9A98B009D2C87 /* DailyWeatherCollectionViewCell.swift */,
 				7CD169682AC9A992009D2C87 /* HourlyWeatherCollectionViewCell.swift */,
+				7CD169662AC9A98B009D2C87 /* DailyWeatherCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
