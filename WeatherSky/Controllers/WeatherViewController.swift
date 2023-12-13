@@ -7,6 +7,8 @@
 
 import UIKit
 import OSLog
+import RevenueCat
+import RevenueCatUI
 
 class WeatherViewController: UIViewController {
   
@@ -24,7 +26,10 @@ class WeatherViewController: UIViewController {
   
   @objc
   private func didTapUpgrade() {
-    
+    let vc = PaywallViewController()
+    vc.delegate = self
+//    vc.modalPresentationStyle = .fullScreen
+    present(vc, animated: true)
   }
   
   private func getLocation() {
@@ -53,5 +58,15 @@ class WeatherViewController: UIViewController {
       primaryView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
       primaryView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
       primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
+  }
+}
+
+extension WeatherViewController : PaywallViewControllerDelegate {
+  func paywallViewController(_ controller: PaywallViewController, didFinishPurchasingWith customerInfo: CustomerInfo) {
+    print("Purchased \(customerInfo)")
+  }
+  
+  func paywallViewController(_ controller: PaywallViewController, didFinishRestoringWith customerInfo: CustomerInfo) {
+    print("Purchased \(customerInfo)")
   }
 }

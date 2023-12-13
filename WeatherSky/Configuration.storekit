@@ -7,6 +7,7 @@
 
   ],
   "settings" : {
+    "_askToBuyEnabled" : false,
     "_failTransactionsEnabled" : false,
     "_storeKitErrors" : [
       {
@@ -108,7 +109,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.alfinindrawan.WeatherSky.monthly",
+          "productID" : "com.alfinindrawan.WeatherSky.yearly",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Pro Annual",
           "subscriptionGroupID" : "DF9A664D",

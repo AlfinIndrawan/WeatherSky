@@ -15,6 +15,7 @@
 		7C3910D92AF24D510058D2AF /* CurrentWeatherCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3910D82AF24D510058D2AF /* CurrentWeatherCollectionViewCellModel.swift */; };
 		7C3910DB2AF24D8A0058D2AF /* HourlyWeatherCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3910DA2AF24D8A0058D2AF /* HourlyWeatherCollectionViewCellModel.swift */; };
 		7C3910DD2AF24DAB0058D2AF /* DailyWeatherCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3910DC2AF24DAB0058D2AF /* DailyWeatherCollectionViewCellModel.swift */; };
+		7C4FBC372B2A05A800F9FF22 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7C4FBC362B2A05A800F9FF22 /* StoreKitTestCertificate.cer */; };
 		7C520A472B1F575B0039A4D1 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 7C520A462B1F575B0039A4D1 /* RevenueCat */; };
 		7C520A492B1F575B0039A4D1 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7C520A482B1F575B0039A4D1 /* RevenueCatUI */; };
 		7CBA6A1F2AC2E5B30036BCEA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBA6A1E2AC2E5B30036BCEA /* StoreKit.framework */; };
@@ -62,6 +63,7 @@
 		7C3910D82AF24D510058D2AF /* CurrentWeatherCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		7C3910DA2AF24D8A0058D2AF /* HourlyWeatherCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		7C3910DC2AF24DAB0058D2AF /* DailyWeatherCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		7C4FBC362B2A05A800F9FF22 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		7C520A4A2B1F5FEC0039A4D1 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Configuration.storekit; path = WeatherSky/Configuration.storekit; sourceTree = "<group>"; };
 		7CBA6A1C2AC2E59E0036BCEA /* WeatherSky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherSky.entitlements; sourceTree = "<group>"; };
 		7CBA6A1E2AC2E5B30036BCEA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				7C520A4A2B1F5FEC0039A4D1 /* Configuration.storekit */,
+				7C4FBC362B2A05A800F9FF22 /* StoreKitTestCertificate.cer */,
 				7CDCEF772AC2D6F50041C135 /* WeatherSky */,
 				7CDCEF8E2AC2D6F90041C135 /* WeatherSkyTests */,
 				7CDCEF982AC2D6F90041C135 /* WeatherSkyUITests */,
@@ -377,6 +380,7 @@
 			files = (
 				7CDCEF852AC2D6F90041C135 /* LaunchScreen.storyboard in Resources */,
 				7CDCEF822AC2D6F90041C135 /* Assets.xcassets in Resources */,
+				7C4FBC372B2A05A800F9FF22 /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
